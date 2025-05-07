@@ -63,7 +63,9 @@ A powerful LSPosed module designed to enhance the **official Telegram** app with
 
 ---
 
-## 📁 Project Structure
+## 🗂 Project Structure
+
+![Project Structure](project-structure.png)
 
 | Folder        | Description                          |
 |---------------|--------------------------------------|
@@ -73,7 +75,6 @@ A powerful LSPosed module designed to enhance the **official Telegram** app with
 | `README.md`   | English documentation                |
 | `README.fa.md`| Persian documentation                |
 
-![Project Structure](project-structure.png)
 ---
 
 > 🛠️ **This project is open-source and intended for educational purposes.**  
