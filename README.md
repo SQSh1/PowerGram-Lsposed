@@ -1,48 +1,108 @@
-# TeleVip LSPosed
+PowerGram-Lsposed
 
-A module for modifying Telegram with the following features:
+PowerGram-Lsposed is an advanced LSPosed module designed to unlock and enhance features in the official Telegram app (Google Play version only). This project is a continuation of the unmaintained TeleVip-Lsposed module.
 
-1. Hide "Seen" status for groups, channels, and private messages.
+Features
 
-2. Hide "Typing..." indicator.
+Privacy Enhancements
 
-3. Hide story view status.
+Hide "Seen" status in private chats
 
-4. Unlock all restricted and encrypted features for channels.
+Hide "Seen" status in groups and channels
 
-5. Boost Telegram download speed.
+Hide "Viewed story" status
 
-6. Enable Telegram Premium features.
+Hide "Online" status
 
-7. Save stories to the gallery, including those that cannot normally be saved.
+Hide phone number
 
-8. Hide Phone Number
+Disable stories
 
-9. Hide Online Status
+Hide typing indicators
 
-10. Prevent Deletion of Secret Media
 
-11. Show Deleted Messages
+Visibility and Unlocks
 
-12. Disable Stories
+View deleted messages
 
-There are additional features that are not listed here.
+Prevent deletion of hidden media
 
-# Support clients
-1. Telegram 11.9.0 (58372)
-2. Plus 11.9.0.1 (21500)
-3. TG Connect 11.0.1 (1100109)
-4. Nagram 11.9.0 (1209)
-5. Skygram 10.20.6 (40639) TeleVip 1.4.6
-6. iMe 11.9.0 (11090002)
-7. X Plus 11.8.2.1 (57869)
-8. Cherrygram 11.9.0 (58370)
-9. Nicegram 1.42.1 (1759)
-10. Telegram web 11.9.0 (58379)
-11. Telegram Beta 10.13.0 (48369)
-12. exteraGram 11.9.0 (58370)
-13. Nekogram 11.5.3S (55150) TeleVip 1.4.6
-14. ForkGram 11.9.0.2 (583728)
-15. ForkClient Beta 11.5.3.0 (551109)
+Unlock restricted and encrypted channel content
 
-Developed by an @mustafa1dev
+Allow saving videos to gallery
+
+Enable Telegram Premium features
+
+Unlock special emojis, high-speed upload/download, infinite pinned chats, and more
+
+
+GUI and Usability
+
+In-app GUI with toggle settings (accessible from launcher icon)
+
+Simple UI with Persian and English language support
+
+Settings gear icon available in LSPosed
+
+Supports only official Telegram client (Google Play)
+
+
+For Iranian Users
+
+Unlock premium features without payment
+
+Filter messages by keyword
+
+Advanced notification management
+
+
+Performance Boost
+
+Disable unnecessary methods and hooks
+
+Execute hooks only when needed
+
+Disable animations
+
+Prevent redundant synchronization
+
+Reduce internal logging
+
+
+Requirements
+
+Rooted Android device
+
+LSPosed installed
+
+Official Telegram app from Google Play Store
+
+
+Installation
+
+1. Clone or download the repository.
+
+
+2. Build and install the APK via Android Studio.
+
+
+3. Enable the module in LSPosed and reboot.
+
+
+4. Launch "PowerGram" from your app drawer to configure settings.
+
+
+
+License
+
+This project is licensed under the GPL-3.0 License. See the LICENSE file for details.
+
+Contributors
+
+Developed and maintained by SQ with contributions and support from QT.
+
+
+---
+
+برای مطالعهٔ توضیحات فارسی اینجا کلیک کنید
+
