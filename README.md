@@ -1,108 +1,120 @@
-PowerGram-Lsposed
+# PowerGram-Lsposed
 
-PowerGram-Lsposed is an advanced LSPosed module designed to unlock and enhance features in the official Telegram app (Google Play version only). This project is a continuation of the unmaintained TeleVip-Lsposed module.
-
-Features
-
-Privacy Enhancements
-
-Hide "Seen" status in private chats
-
-Hide "Seen" status in groups and channels
-
-Hide "Viewed story" status
-
-Hide "Online" status
-
-Hide phone number
-
-Disable stories
-
-Hide typing indicators
-
-
-Visibility and Unlocks
-
-View deleted messages
-
-Prevent deletion of hidden media
-
-Unlock restricted and encrypted channel content
-
-Allow saving videos to gallery
-
-Enable Telegram Premium features
-
-Unlock special emojis, high-speed upload/download, infinite pinned chats, and more
-
-
-GUI and Usability
-
-In-app GUI with toggle settings (accessible from launcher icon)
-
-Simple UI with Persian and English language support
-
-Settings gear icon available in LSPosed
-
-Supports only official Telegram client (Google Play)
-
-
-For Iranian Users
-
-Unlock premium features without payment
-
-Filter messages by keyword
-
-Advanced notification management
-
-
-Performance Boost
-
-Disable unnecessary methods and hooks
-
-Execute hooks only when needed
-
-Disable animations
-
-Prevent redundant synchronization
-
-Reduce internal logging
-
-
-Requirements
-
-Rooted Android device
-
-LSPosed installed
-
-Official Telegram app from Google Play Store
-
-
-Installation
-
-1. Clone or download the repository.
-
-
-2. Build and install the APK via Android Studio.
-
-
-3. Enable the module in LSPosed and reboot.
-
-
-4. Launch "PowerGram" from your app drawer to configure settings.
-
-
-
-License
-
-This project is licensed under the GPL-3.0 License. See the LICENSE file for details.
-
-Contributors
-
-Developed and maintained by SQ with contributions and support from QT.
-
+**PowerGram-Lsposed** is a powerful LSPosed/Xposed module designed to enhance the official Telegram client (Google Play version) with privacy features, premium unlocks, UI tweaks, and performance optimizations.
 
 ---
 
-برای مطالعهٔ توضیحات فارسی اینجا کلیک کنید
+## 🚀 Features
 
+### 🔒 Privacy Enhancements
+
+* Hide "Seen" status for private chats
+* Hide "Seen" status for groups and channels
+* Hide "Story Viewed" status
+* Hide "Online" status
+* Hide phone number visibility
+* Hide typing indicator
+
+### 📵 Story Management
+
+* Disable Stories feature completely
+
+### 🧽 Deleted Messages
+
+* View deleted messages
+* Prevent hidden media deletion
+
+### 🔓 Channel & Feature Unlocks
+
+* Unlock encrypted and restricted channel content
+* Save videos directly to gallery
+* Unlock Telegram Premium features:
+
+  * Premium emojis
+  * Faster uploads/downloads
+  * Unlimited pinned chats
+  * Message translation
+  * Disable ads
+  * All premium reactions
+
+### 🛠 UI & Interaction
+
+* Built-in GUI settings page (accessible via launcher icon)
+* Modern, dual-language interface (English + Persian)
+* LSPosed gear icon for quick access
+
+### 📲 Official Client Only
+
+* Works only with the **official Telegram client from Google Play** (for stability and compatibility)
+
+### 🔔 Advanced Notification Control
+
+* Filter messages using keyword rules
+* Show hidden messages silently
+
+### ⚡ Performance Optimizations
+
+* Disable unnecessary animations
+* Reduce background logging
+* Smart hook injection only when needed
+* Remove redundant async syncs
+* Reduce memory and CPU usage
+
+---
+
+## ✅ Why PowerGram-Lsposed?
+
+Unlike forks or clones, this project aims for deep integration with the original Telegram client. It's privacy-first, lightweight, and focuses on:
+
+* Reliable premium unlocking for Iranian users
+* A clean, user-friendly interface
+* Smart resource management
+
+---
+
+## 📦 Installation
+
+1. Install **LSPosed** framework (via Magisk).
+2. Install the PowerGram-Lsposed APK.
+3. Activate the module for Telegram from **Google Play**.
+4. Reboot your device.
+
+---
+
+## 🗂 Project Structure
+
+```
+PowerGram-Lsposed/
+├── app/                   # GUI Launcher
+├── module/                # LSPosed Hooks
+├── README.md              # This file
+├── README.fa.md           # Persian version
+└── build.gradle           # Build setup
+```
+
+---
+
+## 🌐 Other Languages
+
+* [🇮🇷 فارسی (Persian) README](./README.fa.md)
+
+---
+
+## 🤝 Contribution
+
+We welcome feature suggestions, pull requests, and issue reports.
+
+---
+
+## 🛡 Disclaimer
+
+This project is not affiliated with or endorsed by Telegram Messenger LLP. Use at your own risk.
+
+---
+
+## 📧 Contact
+
+For discussions, support or collaboration:
+
+* GitHub Issues
+* Telegram: \[Coming soon]
