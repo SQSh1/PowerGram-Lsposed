@@ -83,7 +83,7 @@ A powerful LSPosed module designed to enhance the **official Telegram** app with
 ---
 
 ## 🔗 Related Links
-- [📄 Persian README](./README.fa.md)
+- [📄 Persian🇮🇷 README](./README.fa.md)
 - [📦 Telegram Source Code](https://github.com/DrKLO/Telegram)
 - [🔧 LSPosed Framework](https://github.com/LSPosed/LSPosed)
 
