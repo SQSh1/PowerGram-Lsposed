@@ -62,12 +62,11 @@ Supports only the Google Play version of Telegram for maximum stability and inte
 
 ---
 
-## 📁 Repository Structure
-- `app/` – Main GUI app source
-- `module/` – LSPosed hook logic
-- `res/` – Localized resources and icons
-- `README.md` – English documentation
-- `README.fa.md` – Persian documentation
+## 🗂 Project Structure
+
+![Project Structure](project-structure.png)
+
+
 
 ---
 
