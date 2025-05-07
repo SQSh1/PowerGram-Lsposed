@@ -117,4 +117,4 @@ This project is not affiliated with or endorsed by Telegram Messenger LLP. Use a
 For discussions, support or collaboration:
 
 * GitHub Issues
-* Telegram: \[Coming soon]
+* Telegram: \[---]
