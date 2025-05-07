@@ -6,9 +6,9 @@ A powerful LSPosed module designed to enhance the **official Telegram** app with
 
 ---
 
-## 🎯 Features
+##  Features
 
-### 🛡️ Privacy Control
+###  Privacy Control
 - Hide “Seen” status in private chats
 - Hide “Seen” in groups and channels
 - Hide “Story Viewed” status
