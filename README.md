@@ -57,7 +57,7 @@ Supports only the Google Play version of Telegram for maximum stability and inte
 ---
 
 ## 🌐 Languages
-- 🇮🇷 Persian (فارسی)
+- 🇮🇷 Persian 
 - 🇺🇸 English
 
 ---
