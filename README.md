@@ -1,4 +1,4 @@
-#  PowerGram-Lsposed
+# - PowerGram-Lsposed
 
 A powerful LSPosed module designed to enhance the **official Telegram** app with **privacy**, **performance**, and **premium unlocking** features.
 
