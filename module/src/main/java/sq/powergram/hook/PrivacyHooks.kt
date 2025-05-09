@@ -13,6 +13,7 @@ object PrivacyHooks {
         showDeletedMessages(lpparam)
         hideStoryViewStatus(lpparam)
         removeForwardQuote(lpparam)
+        hideReadReceipts(lpparam)
     }
 
     private fun hideReadReceipts(lpparam: XC_LoadPackage.LoadPackageParam) {
