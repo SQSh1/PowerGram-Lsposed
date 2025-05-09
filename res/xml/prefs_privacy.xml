@@ -1,0 +1,36 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/privacy_category">
+
+        <CheckBoxPreference
+            android:key="hide_read_receipts"
+            android:title="@string/hide_read_receipts"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="hide_typing_status"
+            android:title="@string/hide_typing_status"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="hide_online_status"
+            android:title="@string/hide_online_status"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="show_deleted_messages"
+            android:title="@string/show_deleted_messages"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="hide_story_view_status"
+            android:title="@string/hide_story_view_status"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="remove_forward_quote"
+            android:title="@string/remove_forward_quote"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
