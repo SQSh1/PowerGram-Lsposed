@@ -105,3 +105,24 @@ object PrivacyHooks {
         }
     }
 }
+    private fun getFeatureEnabled(
+    lpparam: XC_LoadPackage.LoadPackageParam,
+    key: String,
+    defaultValue: Boolean = true
+): Boolean {
+    return try {
+        val context = lpparam.appInfo?.packageName?.let {
+            val settingsContext = lpparam.classLoader
+                .loadClass("android.app.ActivityThread")
+                .getMethod("currentApplication")
+                .invoke(null) as? Context
+            settingsContext?.createPackageContext("sq.powergram.settings", Context.MODE_PRIVATE)
+        }
+
+        val prefs = context?.getSharedPreferences("powergram_privacy_prefs", Context.MODE_PRIVATE)
+        prefs?.getBoolean(key, defaultValue) ?: defaultValue
+    } catch (e: Throwable) {
+        e.printStackTrace()
+        defaultValue
+    }
+    }
