@@ -12,6 +12,7 @@ object PrivacyHooks {
         hideOnlineStatus(lpparam)
         showDeletedMessages(lpparam)
         hideStoryViewStatus(lpparam)
+        removeForwardQuote(lpparam)
     }
 
     private fun hideReadReceipts(lpparam: XC_LoadPackage.LoadPackageParam) {
@@ -79,6 +80,23 @@ object PrivacyHooks {
                 object : XC_MethodHook() {
                     override fun beforeHookedMethod(param: MethodHookParam) {
                         param.result = null
+                    }
+                }
+            )
+        } catch (e: Throwable) {
+            e.printStackTrace()
+        }
+    }
+
+    private fun removeForwardQuote(lpparam: XC_LoadPackage.LoadPackageParam) {
+        try {
+            XposedHelpers.findAndHookMethod(
+                "org.telegram.messenger.MessageObject",
+                lpparam.classLoader,
+                "isForwarded",
+                object : XC_MethodHook() {
+                    override fun afterHookedMethod(param: MethodHookParam) {
+                        param.result = false
                     }
                 }
             )
