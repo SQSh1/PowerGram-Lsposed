@@ -105,6 +105,24 @@ object PrivacyHooks {
         }
     }
 }
+
+    private fun hideReadReceipts(lpparam: XC_LoadPackage.LoadPackageParam) {
+    if (!getFeatureEnabled(lpparam, "hide_read_receipts")) return
+
+    XposedHelpers.findAndHookMethod(
+        "org.telegram.messenger.MessagesController",
+        lpparam.classLoader,
+        "markDialogAsRead",
+        Long::class.javaPrimitiveType,
+        Boolean::class.javaPrimitiveType,
+        object : XC_MethodHook() {
+            override fun beforeHookedMethod(param: MethodHookParam) {
+                param.result = null
+            }
+        }
+    )
+    }
+
     private fun getFeatureEnabled(
     lpparam: XC_LoadPackage.LoadPackageParam,
     key: String,
