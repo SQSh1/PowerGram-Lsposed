@@ -66,25 +66,24 @@ object PrivacyHooks {
             e.printStackTrace()
         }
     }
-}
 
-private fun hideStoryViewStatus(lpparam: XC_LoadPackage.LoadPackageParam) {
-    try {
-        XposedHelpers.findAndHookMethod(
-            "org.telegram.messenger.StoriesController",
-            lpparam.classLoader,
-            "markStoryAsViewed",
-            Long::class.javaPrimitiveType,
-            Int::class.javaPrimitiveType,
-            Boolean::class.javaPrimitiveType,
-            object : XC_MethodHook() {
-                override fun beforeHookedMethod(param: MethodHookParam) {
-                    // جلوگیری از ثبت دیدن استوری
-                    param.result = null
+    private fun hideStoryViewStatus(lpparam: XC_LoadPackage.LoadPackageParam) {
+        try {
+            XposedHelpers.findAndHookMethod(
+                "org.telegram.messenger.StoriesController",
+                lpparam.classLoader,
+                "markStoryAsViewed",
+                Long::class.javaPrimitiveType,
+                Int::class.javaPrimitiveType,
+                Boolean::class.javaPrimitiveType,
+                object : XC_MethodHook() {
+                    override fun beforeHookedMethod(param: MethodHookParam) {
+                        param.result = null
+                    }
                 }
-            }
-        )
-    } catch (e: Throwable) {
-        e.printStackTrace()
+            )
+        } catch (e: Throwable) {
+            e.printStackTrace()
+        }
     }
 }
