@@ -11,6 +11,7 @@ object PrivacyHooks {
         hideTypingStatus(lpparam)
         hideOnlineStatus(lpparam)
         showDeletedMessages(lpparam)
+        hideStoryViewStatus(lpparam)
     }
 
     private fun hideReadReceipts(lpparam: XC_LoadPackage.LoadPackageParam) {
@@ -64,5 +65,26 @@ object PrivacyHooks {
         } catch (e: Throwable) {
             e.printStackTrace()
         }
+    }
+}
+
+private fun hideStoryViewStatus(lpparam: XC_LoadPackage.LoadPackageParam) {
+    try {
+        XposedHelpers.findAndHookMethod(
+            "org.telegram.messenger.StoriesController",
+            lpparam.classLoader,
+            "markStoryAsViewed",
+            Long::class.javaPrimitiveType,
+            Int::class.javaPrimitiveType,
+            Boolean::class.javaPrimitiveType,
+            object : XC_MethodHook() {
+                override fun beforeHookedMethod(param: MethodHookParam) {
+                    // جلوگیری از ثبت دیدن استوری
+                    param.result = null
+                }
+            }
+        )
+    } catch (e: Throwable) {
+        e.printStackTrace()
     }
 }
