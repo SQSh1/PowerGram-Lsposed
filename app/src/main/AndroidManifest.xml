@@ -1,4 +1,13 @@
-<activity
-    android:name="sq.powergram.ui.SettingsActivity"
-    android:exported="true"
-    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+<application
+    android:label="PowerGram"
+    android:icon="@mipmap/ic_launcher"
+    android:theme="@style/Theme.PowerGram">
+    
+    <!-- دیگر اکتیویتی‌ها -->
+
+    <activity
+        android:name="sq.powergram.ui.SettingsActivity"
+        android:exported="true"
+        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+
+</application>
