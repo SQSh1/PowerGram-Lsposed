@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PowerGram</string>
+    <string name="hide_read_receipts">عدم ارسال تیک دوم (رسید خواندن)</string>
+    <string name="hide_typing_status">مخفی‌کردن در حال تایپ</string>
+    <string name="hide_story_view_status">مخفی کردن بازدید استوری</string>
+    <string name="remove_forward_quote">حذف برچسب نقل قول</string>
+    <string name="show_deleted_messages">نمایش پیام‌های حذف‌شده</string>
+</resources>
