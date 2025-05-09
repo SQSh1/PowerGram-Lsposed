@@ -48,3 +48,38 @@ object PrivacyHooks {
         // TODO: بررسی و تست بیشتر نیاز است
     }
 }
+package sq.powergram.hook
+
+import de.robv.android.xposed.XC_MethodHook
+import de.robv.android.xposed.XposedHelpers
+import de.robv.android.xposed.callbacks.XC_LoadPackage
+
+object PrivacyHooks {
+
+    fun apply(lpparam: XC_LoadPackage.LoadPackageParam) {
+        showDeletedMessages(lpparam)
+        // فیچرهای دیگر اینجا اضافه خواهند شد
+    }
+
+    private fun showDeletedMessages(lpparam: XC_LoadPackage.LoadPackageParam) {
+        try {
+            XposedHelpers.findAndHookMethod(
+                "org.telegram.messenger.MessageObject",
+                lpparam.classLoader,
+                "isOut",
+                object : XC_MethodHook() {
+                    override fun afterHookedMethod(param: MethodHookParam) {
+                        // فقط پیام‌های ورودی بررسی بشن
+                        val result = param.result as Boolean
+                        if (!result) {
+                            // اینجا میشه وضعیت پیام رو طوری دستکاری کرد که حذف نشه
+                            XposedHelpers.setBooleanField(param.thisObject, "deleted", false)
+                        }
+                    }
+                }
+            )
+        } catch (e: Throwable) {
+            e.printStackTrace()
+        }
+    }
+}
